@@ -1,5 +1,7 @@
 <template>
-  12cvbvcb
+  <div class="a">
+    1
+  </div>
 </template>
 <style lang="postcss" scoped>
 .a {
