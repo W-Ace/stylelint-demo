@@ -1,9 +1,15 @@
 module.exports = {
   extends: [
-    'stylelint-config-standard',
+    'stylelint-config-standard-scss',
     'stylelint-config-recommended-vue',
   ],
   customSyntax: 'postcss-html',
+  overrides: [
+    {
+      files: ['**/*.{scss,css,sass}'], // css 相关文件由 postcss-scss 处理
+      customSyntax: 'postcss-scss',
+    },
+  ],
   plugins: [
     'stylelint-scss',
     'stylelint-order',
